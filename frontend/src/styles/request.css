@@ -1,0 +1,26 @@
+.request {
+    animation-name: fade-down;
+    animation-duration: 350ms;
+}
+
+@keyframes fade-down{
+    from {
+        opacity: 0;
+        transform: translateY(-32px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .request .MuiGrid-grid-xs-1 {
+        max-width: 16.666666%;
+        flex-basis: 16.666666%;
+    }
+    .request .MuiGrid-grid-xs-5 {
+        max-width: 83.3333333%;
+        flex-basis: 83.3333333%;
+    }
+}

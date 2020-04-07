@@ -1,0 +1,35 @@
+#root {
+  height: 100%;
+  --primary-color: #FF5721;
+  --secondary-color: #2196f3;
+}
+
+#root > div {
+  height: 100%;
+}
+
+.MuiDialog-paper {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+
+button:not(.MuiButton-sizeSmall, .MuiBottomNavigationAction-root) {
+  line-height: 35px;
+  vertical-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.map-button:first-child {
+  display: none;
+}
+
+@media only screen and (max-width: 440px) {
+  .map-button:first-child {
+    display: block;
+  }
+
+  .map-button:not(:first-child) {
+    display: none;
+  }
+}

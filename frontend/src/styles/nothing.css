@@ -1,0 +1,20 @@
+.nothing {
+    margin: 8px auto;
+    height: 128px;
+    width: calc(100% - 48px);
+    max-width: 400px;
+    border: 6px dotted var(--secondary-color);
+    text-align: center;
+    padding-top: 18px;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+
+    animation-name: fade-down;
+    animation-duration: 350ms;
+}
+
+.nothing svg, .nothing img {
+    /*transform: rotate(180deg);*/
+    height: 48px;
+    width: 48px;
+}

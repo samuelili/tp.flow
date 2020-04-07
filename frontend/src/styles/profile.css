@@ -1,0 +1,32 @@
+.profile-header {
+    position: relative;
+    background: var(--primary-color);
+    color: white;
+    padding: 128px 140px 16px 16px;
+}
+.profile-header img {
+    position: absolute;
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    bottom: -64px;
+    right: 16px;
+}
+
+.profile-content .MuiInputLabel-outlined {
+    background: #fff;
+}
+
+.profile-content .MuiIconButton-root {
+    position: relative;
+    right: -12px;
+
+}
+.add-request {
+    float: right;
+}
+@media screen and (max-width:393px) {
+    .add-request {
+        float: left;
+    }
+}

@@ -1,0 +1,67 @@
+.hospital-data {
+    position: relative;
+    width: 100%;
+}
+
+.hospital-data > * {
+    opacity: 0;
+    transform: translateY(-64px);
+    transition: all 300ms;
+}
+
+.hospital-data.visible > * {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hospital-data > .nothing {
+    position: absolute;
+    margin: auto;
+    top: 12px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transform: translateY(0);
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.hospital-data.visible > .nothing {
+    opacity: 0;
+}
+
+.hospital-data-img {
+    position: relative;
+    height: 270px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.hospital-data-img button {
+    position: absolute;
+    right: 18px;
+}
+
+.hospital-data-content {
+    position: relative;
+}
+
+.hospital-data .directions {
+    position: absolute;
+    top: -32px;
+    right: 16px;
+    z-index: 100;
+}
+
+@media screen and (max-width: 1000px) {
+    .hospital-data-img {
+        height: 45vw;
+        max-height: 400px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+}

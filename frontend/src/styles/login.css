@@ -1,0 +1,16 @@
+.login-container {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 500ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

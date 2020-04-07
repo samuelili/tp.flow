@@ -1,0 +1,61 @@
+.action-fabs {
+    display: flex;
+    position: absolute;
+    bottom: 32px;
+    right: 24px;
+    z-index: 100;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    pointer-events: none;
+}
+
+.action-fabs > button {
+    margin-top: 16px;
+    float: right;
+    pointer-events: auto;
+}
+
+.action-fabs > .smaller-fabs {
+    pointer-events: none;
+    opacity: 0;
+    transition: all 270ms;
+}
+
+.action-fabs .shade {
+    top: +4px;
+    left: -16px;
+    height: calc(100% + 7px);
+    width: calc(100% + 28px);
+    background: rgba(0,0,0, 0);
+    position: absolute;
+    border-radius: 32px;
+    z-index: -1;
+    transition: background 270ms;
+    pointer-events: none;
+}
+
+.action-fabs.visible > .shade {
+    background: rgba(0,0,0, 0.5);
+}
+
+.action-fabs.visible > .smaller-fabs {
+    opacity: 1;
+    color: white;
+    pointer-events: auto;
+}
+
+.action-fabs .smaller-fabs > div {
+    display: flex;
+    margin-top: 16px;
+}
+
+.action-fabs .smaller-fabs span {
+    flex: 1;
+    line-height: 40px;
+    vertical-align: center;
+}
+
+.action-fabs .smaller-fabs button {
+    flex-shrink: 1;
+    margin-left: 16px;
+}
